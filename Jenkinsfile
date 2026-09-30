@@ -1,12 +1,12 @@
 
 pipeline {
-//     agent {
-//     node {
-//         label 'AGENT-1'
+    agent {
+    node {
+        label 'AGENT-1'
     
-//     }
-//    }
- agent any
+    }
+   }
+//  agent any.   for without agent
    environment {
     Greetings= 'hello jenkins'
    }
