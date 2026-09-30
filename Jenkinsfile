@@ -1,4 +1,4 @@
-## this is a jenkinsfil always captial Jenkinsfile
+
 pipeline {
     agent any
 
