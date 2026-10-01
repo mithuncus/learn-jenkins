@@ -81,7 +81,7 @@ pipeline {
             echo 'I will say Hello again when build is aborted!'
         }
         cleanup {
-            echo 'Cleaning up...'
+            echo 'Cleaning up.'
         }
     }
 }
