@@ -47,6 +47,11 @@ pipeline {
                 """
             }
         }
+        stage('Madhan') {
+            steps {
+                echo 'Madhan is a good boy'
+            }
+        }
         // stage('check parameters') {
         //     steps {
         //         sh """
