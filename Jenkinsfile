@@ -11,7 +11,7 @@ pipeline {
     Greetings= 'hello jenkins'
    }
    options {
-    timeout (time: 1; unit: 'HOURS' )
+    timeout (time: 1, unit: 'HOURS' )
     disableConcurrentBuilds(). //this line will disable the concurrent builds 
 
     )
