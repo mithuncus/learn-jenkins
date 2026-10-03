@@ -52,41 +52,41 @@ pipeline {
                 echo 'Madhan is a good boy'
             }
         }
-        stage('check parameters') {
-            steps {
-                sh """
-                echo "Hello ${params.PERSON}"
+        // stage('check parameters') {
+        //     steps {
+        //         sh """
+        //         echo "Hello ${params.PERSON}"
 
-                echo "Biography: ${params.BIOGRAPHY}"
+        //         echo "Biography: ${params.BIOGRAPHY}"
 
-                echo "Toggle: ${params.TOGGLE}"
+        //         echo "Toggle: ${params.TOGGLE}"
 
-                echo "Choice: ${params.CHOICE}"
+        //         echo "Choice: ${params.CHOICE}"
 
-                echo "Password: ${params.PASSWORD}"
-                """
-            }
-        }
+        //         echo "Password: ${params.PASSWORD}"
+        //         """
+        //     }
+        // }
     }
     // post build
-    //  post { 
-    //     always { 
-    //         echo 'I will always say Hello again!'
-    //     }
-    //     success { 
-    //         echo 'I will say Hello again when build is success!'
-    //     }
-    //     failure { 
-    //         echo 'I will say Hello again when build is failure!'
-    //     }
-    //     unstable { 
-    //         echo 'I will say Hello again when build is unstable!'
-    //     }
-    //     aborted { 
-    //         echo 'I will say Hello again when build is aborted!'
-    //     }
-    //     cleanup {
-    //         echo 'Cleaning up.'
-    //     }
+     post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+        success { 
+            echo 'I will say Hello again when build is success!'
+        }
+        failure { 
+            echo 'I will say Hello again when build is failure!'
+        }
+        unstable { 
+            echo 'I will say Hello again when build is unstable!'
+        }
+        aborted { 
+            echo 'I will say Hello again when build is aborted!'
+        }
+        cleanup {
+            echo 'Cleaning up.'
+        }
     }
 }
