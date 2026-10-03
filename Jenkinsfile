@@ -72,6 +72,11 @@ pipeline {
                 echo 'Kethana is one of the best soal'
             }
         }
+        stage('Tanvi') {
+            steps {
+                echo 'Tanvi is best kid'
+            }
+        }
     }
     // post build
      post { 
