@@ -67,6 +67,11 @@ pipeline {
         //         """
         //     }
         // }
+        stage('Kethana') {
+            steps {
+                echo 'Kethana is one of the best soal'
+            }
+        }
     }
     // post build
      post { 
